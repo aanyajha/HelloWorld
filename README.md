@@ -16,7 +16,14 @@ Frontend
 
 ### Moods and their colors
 
-happy/yellow
-sad/blue
-bored/brown
-motivated/purple
+- happy/yellow
+- sad/blue
+- bored/brown
+- motivated/purple
+
+### Song genres provided
+
+- pop
+- alternative
+- Hip Hop
+- Country
