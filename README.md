@@ -18,7 +18,7 @@
 
 - happy/yellow
 - sad/blue
-- bored/brown
+- bored/green
 - motivated/purple
 
 #### Song genres provided
