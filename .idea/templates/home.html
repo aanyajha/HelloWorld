@@ -55,22 +55,22 @@ ul.topnav li.middle {float: middle;}
   color: white;
 }
 .hap {
-  background-color: #FCB214;
+  background-color: rgba(213, 146, 36);
   color: white;
   width: 100%;
 }
 .sa {
-  background-color: #80C2E3;
+  background-color:rgba(45, 141, 216);
   color: white;
   width: 100%;
 }
 .tir {
-  background-color: #905500;
+  background-color: rgba(8, 147, 37);
   color: white;
   width: 100%;
 }
 .mot {
-  background-color: #9C6DEA;
+  background-color: rgba(162, 122, 241);
   color: white;
   width: 100%;
 }
@@ -83,16 +83,15 @@ ul.topnav li.middle {float: middle;}
 <body>
 
     <ul class="topnav">
-        <li><a href="/">Music Recommenation</a></li>
+        <li><a href="{{url_for('musicrec_route')}}">Music Recommenation</a></li>
     </ul>
-    <img src="https://i.pinimg.com/originals/64/7d/11/647d1179776d6a1a0235aeb82cc72927.jpg" alt="Photo of Edwards Cinema" style="width:70%; height:600px;" class="center">
 
     <center>
     <div class="vertical-menu">
         <a class = "hap"href= "{{url_for('happy_route')}}">Happy</a>
         <a class = "sa" href= "/">Gloomy</a>
-        <a class = "tir" href= "/">Motivation</a>
-        <a class = "mot" href= "/">Boredom</a>
+        <a class = "tir" href= "/">Boredom</a>
+        <a class = "mot" href= "/">Motivation</a>
     </div>
     </center>
 

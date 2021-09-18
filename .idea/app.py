@@ -8,9 +8,12 @@ app = Flask(__name__)
 @app.route("/")
 def home_route():
     return render_template("home.html" , projects=projects.setup())
-@app.route("/happy")
+@app.route("/happy/")
 def happy_route():
     return render_template("happy.html" , projects=projects.setup())
+@app.route("/musicrec")
+def musicrec_route():
+    return render_template("musicrec.html" , projects=projects.setup())
 
 if __name__ == "__main__":
     app.run(debug=True, port='8008 ', host='127.0.0.1')

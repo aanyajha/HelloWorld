@@ -9,7 +9,7 @@ body {
 
 .flip-card {
   background-color: transparent;
-  width: 265px;
+  width:25%;
   height: 265px;
   perspective: 1000px;
 }
@@ -52,10 +52,42 @@ a:link, a:visited, a:hover, a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+body {margin: 0;}
 
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+ul.topnav li {float: middle;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #000;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.middle {float: middle;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.middle,
+  ul.topnav li {float: none;}
+}
 </style>
 </head>
 <body style="background-color: pink; color: #322B35;">
+<ul class="topnav">
+    <li><a href="/">Home</a></li>
+</ul>
 
 <img src = "https://see.fontimg.com/api/renderfont4/gxAE6/eyJyIjoiZnMiLCJoIjo5OCwidyI6MTUwMCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/TXVzaWMgUmVjb21tZW5kYXRpb25z/free-coastine-regular.png" alt="music recs" style="width: 700px; length 100px;">
 <h3>Pop:</h3>
