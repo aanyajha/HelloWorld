@@ -12,3 +12,11 @@ Frontend
 - website
 - one page with different genres of music
 - one page with mood quiz
+
+
+Moods and their colors
+
+happy - yellow
+sad - blue
+bored - brown
+motivated - purple
