@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+ul.topnav li {float: middle;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #000;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.middle {float: middle;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.middle,
+  ul.topnav li {float: none;}
+}
+.vertical-menu {
+  width: 100%;
+}
+
+.vertical-menu a {
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.hap {
+  background-color: #FCB214;
+  color: white;
+  width: 100%;
+}
+.sa {
+  background-color: #80C2E3;
+  color: white;
+  width: 100%;
+}
+.tir {
+  background-color: #905500;
+  color: white;
+  width: 100%;
+}
+.mot {
+  background-color: #9C6DEA;
+  color: white;
+  width: 100%;
+}
+</style>
+    <meta charset="UTF-8">
+    <title>Mood Form</title>
+    <link href="../static/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <ul class="topnav">
+        <li><a href="/">Music Recommenation</a></li>
+    </ul>
+    <img src="https://i.pinimg.com/originals/64/7d/11/647d1179776d6a1a0235aeb82cc72927.jpg" alt="Photo of Edwards Cinema" style="width:70%; height:600px;" class="center">
+
+    <center>
+    <div class="vertical-menu">
+        <a class = "hap"href= "{{url_for('happy_route')}}">Happy</a>
+        <a class = "sa" href= "/">Sad</a>
+        <a class = "tir" href= "/">Tired</a>
+        <a class = "mot" href= "/">Motivated</a>
+    </div>
+    </center>
+
+
+
+</body>
+{% block script %}
+<script src="https://threejs.org/build/three.js"></script>
+<!--
+<script src="{{ url_for('static', filename='vanta.dots.min.js') }}"></script>!-->
+<script src="../static/bootstrap.bundle.min.js"></script>
+{%endblock%}
+</html>
