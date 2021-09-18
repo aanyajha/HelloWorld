@@ -14,9 +14,9 @@ Frontend
 - one page with mood quiz
 
 
-Moods and their colors
+### Moods and their colors
 
-happy - yellow
-sad - blue
-bored - brown
-motivated - purple
+happy/yellow
+sad/blue
+bored/brown
+motivated/purple
