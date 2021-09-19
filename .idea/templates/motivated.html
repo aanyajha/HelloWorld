@@ -1,8 +1,43 @@
 <!DOCTYPE html>
+{% block content %}
 <html>
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>motivated</title>
+
     <style>
+                body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+ul.topnav li {float: middle;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #000;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.middle {float: middle;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.middle,
+  ul.topnav li {float: none;}
+}
 * {
   box-sizing: border-box;
 }
@@ -39,10 +74,29 @@
   background-color: rgba(195, 75, 245);
   color: white;
 }
+body {
+           background: linear-gradient(to left, rgba(255,255,255,0), rgba(204,153,225,1));
+           justify-content: center;
+           vertical-align: middle;
+       }
+
 </style>
 </head>
 <body>
 
+<ul class="topnav">
+    <li><a href="/">Home</a></li>
+    <li><a href="{{url_for('musicrec_route')}}">Music Recommenation</a></li>
+</ul>
+
+
+<center>
+    <img src="https://i.pinimg.com/originals/e6/cd/d4/e6cdd43b523bcfff1456a81fb6d8be41.png" alt="Motivation Image" width="300" height="250" align="top,right">
+    <img src="https://see.fontimg.com/api/renderfont4/gxAE6/eyJyIjoiZnMiLCJoIjoyNTAsInciOjI1MDAsImZzIjoxMDAsImZnYyI6IiMwMDAwMDAiLCJiZ2MiOiIjRkZGRkZGIiwidCI6MX0/TW90aXZhdGlvbg/free-coastine-regular.png"
+         alt="Motivation" width="550" height="150">
+    <img src="https://i.pinimg.com/originals/e6/cd/d4/e6cdd43b523bcfff1456a81fb6d8be41.png" alt="Motivation Image" width="300" height="250" align="top,right">
+
+</center>
 
 <div id="btnContainer">
     <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button>
@@ -123,4 +177,5 @@ for (var i = 0; i < btns.length; i++) {
 </script>
 
 </body>
+{% endblock %}
 </html>

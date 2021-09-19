@@ -1,8 +1,47 @@
 <!DOCTYPE html>
+{% block content %}
 <html>
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Boredom</title>
+
     <style>
+    body {
+       background: linear-gradient(to left, rgba(255,255,255,0), rgba(94,157,83,1));
+   }
+
+                body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+ul.topnav li {float: middle;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #000;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.middle {float: middle;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.middle,
+  ul.topnav li {float: none;}
+}
 * {
   box-sizing: border-box;
 }
@@ -39,11 +78,31 @@
   background-color: rgba(62, 171, 43);
   color: white;
 }
+body {
+       background: linear-gradient(to left, rgba(255,255,255,0), rgba(94,157,83,1));
+   }
 </style>
 </head>
 <body>
 
+<ul class="topnav">
+    <li><a href="/">Home</a></li>
+    <li><a href="{{url_for('musicrec_route')}}">Music Recommenation</a></li>
+</ul>
+<center>
+<img src="https://webstockreview.net/images/tropical-flower-png-12.png" alt="Boredom Image" width="350" height="300">
+<img src=" https://see.fontimg.com/api/renderfont4/gxAE6/eyJyIjoiZnMiLCJoIjoyNTAsInciOjI1MDAsImZzIjoxMDAsImZnYyI6IiMwMDAwMDAiLCJiZ2MiOiIjRkZGRkZGIiwidCI6MX0/Qm9yZWRvbQ/free-coastine-regular.png
+" alt="Boredom" width="500" height="150">
+<img src="https://webstockreview.net/images/tropical-flower-png-12.png"
+     alt="Boredom Image" width="350" height="300">
+    <h1 style="font-size: 100px">
+        <font face="Yu Gothic"/>
+        <scan style="font-weight:normal">
+        </scan>
+        </font>
+    </h1>
 
+</center>
 <div id="btnContainer">
     <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button>
     <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
@@ -123,4 +182,5 @@ for (var i = 0; i < btns.length; i++) {
 </script>
 
 </body>
+{% endblock %}
 </html>

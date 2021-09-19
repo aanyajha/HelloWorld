@@ -11,6 +11,15 @@ def home_route():
 @app.route("/happy/")
 def happy_route():
     return render_template("happy.html" , projects=projects.setup())
+@app.route("/gloomy/")
+def sad_route():
+    return render_template("sad.html" , projects=projects.setup())
+@app.route("/boredom/")
+def bored_route():
+    return render_template("bored.html" , projects=projects.setup())
+@app.route("/motivated/")
+def motivated_route():
+    return render_template("motivated.html" , projects=projects.setup())
 @app.route("/musicrec")
 def musicrec_route():
     return render_template("musicrec.html" , projects=projects.setup())

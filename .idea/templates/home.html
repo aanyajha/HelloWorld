@@ -5,6 +5,10 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+ body {
+background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,204,153,1));
+       }
+
 body {margin: 0;}
 
 ul.topnav {
@@ -85,13 +89,23 @@ ul.topnav li.middle {float: middle;}
     <ul class="topnav">
         <li><a href="{{url_for('musicrec_route')}}">Music Recommenation</a></li>
     </ul>
-
     <center>
+    <img src="MusicMoodLogo.png" alt="Mood Music Logo">
+    <h1 style = "font-size: 45px">
+        <font face="Yu Gothic">
+<span style="font-weight:normal">Mood Music gives you a customized playlist according to your current mood while
+displaying images encapsulating colors adapting your exact frame of mind.
+       </span>
+        </font>
+    </h1>
+    <img src="https://freepngimg.com/thumb/music/3-2-music-png-image.png" alt="Music Staff" width="720" height="270">
+
+
     <div class="vertical-menu">
         <a class = "hap"href= "{{url_for('happy_route')}}">Happy</a>
-        <a class = "sa" href= "/">Gloomy</a>
-        <a class = "tir" href= "/">Boredom</a>
-        <a class = "mot" href= "/">Motivation</a>
+        <a class = "sa" href= "{{url_for('sad_route')}}">Gloomy</a>
+        <a class = "tir" href= "{{url_for('bored_route')}}">Boredom</a>
+        <a class = "mot" href= "{{url_for('motivated_route')}}">Motivation</a>
     </div>
     </center>
 
